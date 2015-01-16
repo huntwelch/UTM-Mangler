@@ -6,4 +6,4 @@ Now if you see something in your browser url that looks like "utm_something=Face
 
 Brought to you by <a href="http://stilldrinking.org">stilldrinking.org</a>
 
-Also, the lovely and talented <a href="http://blog.sublim.nl/">Elliott</a> packaged this up as a chrome extension to save a click.
+Also, the lovely and talented <a href="http://blog.sublim.nl/">Elliott</a> packaged this up as a <a href="https://chrome.google.com/webstore/detail/utm-mangler/ngddlnhlmdnjphddadgonpfhccgjhfji?hl=en&gl=US&authuser=1">chrome extension</a> to save a click.
