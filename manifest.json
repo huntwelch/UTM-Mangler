@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "UTMangler",
+  "description": "Mangle UTM campaigns automatically",
+  "version": "1.0",
+
+  "background": {
+    "persistent": false,
+    "scripts": [ "utm-mangler.js", "extension.js" ]
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "extension.html"
+  },
+  "permissions": [
+    "webNavigation"
+  ]
+}
