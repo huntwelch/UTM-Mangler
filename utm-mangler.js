@@ -1,5 +1,11 @@
 (function(window) {
+    var link = UTMMangler(window.location.toString());
+    if (link) {
+        window.location = link;
+    }
+})(window);
 
+function UTMMangler(url) {
     var randomsource = [
         'lemonparty.org',
         'goatse.cx',
@@ -35,18 +41,18 @@
         'PhilMcKracken'
     ]
 
-    var original = window.location.toString();    
+    var original = url;
     var parts = original.split('?');
 
     if( parts.length != 2 ) {
-        return alert("Can't work with this url.");
+        return false;
     }
 
     var url = parts[0];
     var params = parts[1];
 
     if( params.indexOf('utm_') == -1 ) {
-        return alert("Couldn't find utm parameters.");
+        return false;
     }
 
     params = params.split('&');
@@ -71,9 +77,8 @@
     }
 
     params = params.join('&');
-    var link = url + '?' + params;
+    var link = url + '?' + params + '&utm_mangled=fuckyeah';    
 
-    window.location = link;
-
-})(window);
+    return link;
+}
 
